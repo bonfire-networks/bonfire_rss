@@ -24,7 +24,8 @@ defmodule Bonfire.RSS.PubSubHubbub do
 
   webhook_url = "https://#{System.get_env("TUNNEL_DOMAIN")}/bonfire_rss/webhook" # Your app's callback URL
 
-  subscribe_url = "http://wordpress.org/news/feed/"
+  subscribe_url = "https://websub.rocks/blog/103/B4nmEcj0StfDnn9NEUb3"
+  # or atom: "https://websub.rocks/blog/103/B4nmEcj0StfDnn9NEUb3"
 
   # Discover the feed's hub
   {:ok, %{hub: hub, self_link: self}} = PubSubHubbub.discover(subscribe_url)
