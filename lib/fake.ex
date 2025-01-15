@@ -1,2 +1,2 @@
-defmodule Bonfire.Rss.Fake do
+defmodule Bonfire.RSS.Fake do
 end

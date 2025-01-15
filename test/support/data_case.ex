@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.DataCase do
+defmodule Bonfire.RSS.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -10,19 +10,19 @@ defmodule Bonfire.Rss.DataCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use Bonfire.Rss.DataCase, async: true`, although
+  by setting `use Bonfire.RSS.DataCase, async: true`, although
   this option is not recommended for other databases.
   """
 
   use ExUnit.CaseTemplate
-  import Bonfire.Rss
+  import Bonfire.RSS
 
   using do
     quote do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      # import Bonfire.Rss.DataCase
+      # import Bonfire.RSS.DataCase
     end
   end
 

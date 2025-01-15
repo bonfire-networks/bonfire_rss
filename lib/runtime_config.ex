@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.RuntimeConfig do
+defmodule Bonfire.RSS.RuntimeConfig do
   use Bonfire.Common.Localise
 
   @behaviour Bonfire.Common.ConfigModule

@@ -1,6 +1,6 @@
 Code.eval_file("mess.exs", (if File.exists?("../../lib/mix/mess.exs"), do: "../../lib/mix/"))
 
-defmodule Bonfire.Rss.MixProject do
+defmodule Bonfire.RSS.MixProject do
   use Mix.Project
 
   def project do
@@ -25,8 +25,8 @@ defmodule Bonfire.Rss.MixProject do
       aliases: aliases(),
       deps:
         Mess.deps([
+          # {:mox, "~> 1.2", only: [:test]},
           {:phoenix_live_reload, "~> 1.2", only: :dev},
-
           {:floki, ">= 0.0.0", only: [:dev, :test]}
         ])
     ]

@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.Web.AboutLive do
+defmodule Bonfire.RSS.Web.AboutLive do
   use Bonfire.UI.Common.Web, :surface_live_view
 
   declare_nav_link(l("About"),

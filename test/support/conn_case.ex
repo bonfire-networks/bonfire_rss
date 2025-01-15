@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.ConnCase do
+defmodule Bonfire.RSS.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -26,14 +26,14 @@ defmodule Bonfire.Rss.ConnCase do
       import Bonfire.UI.Common.Testing.Helpers
 
       import Phoenix.LiveViewTest
-      # import Bonfire.Rss.ConnCase, async: true
+      # import Bonfire.RSS.ConnCase, async: true
 
-      import Bonfire.Rss.Test.ConnHelpers
-      import Bonfire.Rss.Test.FakeHelpers
+      import Bonfire.RSS.Test.ConnHelpers
+      import Bonfire.RSS.Test.FakeHelpers
 
-      alias Bonfire.Rss.Fake
-      import Bonfire.Rss.Fake
-      # alias Bonfire.Rss.Web.Router.Helpers, as: Routes
+      alias Bonfire.RSS.Fake
+      import Bonfire.RSS.Fake
+      # alias Bonfire.RSS.Web.Router.Helpers, as: Routes
 
       # The default endpoint for testing
       @endpoint Application.compile_env!(:bonfire, :endpoint_module)
@@ -41,7 +41,7 @@ defmodule Bonfire.Rss.ConnCase do
   end
 
   setup tags do
-    import Bonfire.Rss
+    import Bonfire.RSS
 
     Bonfire.Common.Test.Interactive.setup_test_repo(tags)
 

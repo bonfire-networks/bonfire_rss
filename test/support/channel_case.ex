@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.ChannelCase do
+defmodule Bonfire.RSS.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -17,13 +17,13 @@ defmodule Bonfire.Rss.ChannelCase do
 
   use ExUnit.CaseTemplate
 
-  import Bonfire.Rss
+  import Bonfire.RSS
 
   using do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import Bonfire.Rss.ChannelCase
+      import Bonfire.RSS.ChannelCase
 
       # The default endpoint for testing
       @endpoint Application.compile_env!(:bonfire, :endpoint_module)

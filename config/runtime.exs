@@ -1,3 +1,3 @@
 import Config
 
-Bonfire.Rss.RuntimeConfig.config()
+Bonfire.RSS.RuntimeConfig.config()

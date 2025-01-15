@@ -1,12 +1,12 @@
-defmodule Bonfire.Rss.Test.FakeHelpers do
+defmodule Bonfire.RSS.Test.FakeHelpers do
   alias Bonfire.Data.Identity.Account
-  alias Bonfire.Rss.Fake
-  alias Bonfire.Rss.Accounts
-  alias Bonfire.Rss.Users
+  alias Bonfire.RSS.Fake
+  alias Bonfire.RSS.Accounts
+  alias Bonfire.RSS.Users
 
   import ExUnit.Assertions
 
-  import Bonfire.Rss
+  import Bonfire.RSS
 
-  import Bonfire.Rss.Fake
+  import Bonfire.RSS.Fake
 end

@@ -5,7 +5,7 @@
 # Inside the script, you can read and write to any of your
 # repositories directly:
 #
-#     Bonfire.Rss.Repo.insert!(%Bonfire.Rss.SomeSchema{})
+#     Bonfire.RSS.Repo.insert!(%Bonfire.RSS.SomeSchema{})
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.

@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.Test.ConnHelpers do
+defmodule Bonfire.RSS.Test.ConnHelpers do
   import ExUnit.Assertions
   import Plug.Conn
   import Phoenix.ConnTest

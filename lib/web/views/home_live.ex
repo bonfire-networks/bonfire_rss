@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.Web.HomeLive do
+defmodule Bonfire.RSS.Web.HomeLive do
   use Bonfire.UI.Common.Web, :surface_live_view
 
   declare_extension(
@@ -6,8 +6,8 @@ defmodule Bonfire.Rss.Web.HomeLive do
     icon: "bi:app",
     description: l("An awesome extension"),
     default_nav: [
-      Bonfire.Rss.Web.HomeLive,
-      Bonfire.Rss.Web.AboutLive
+      Bonfire.RSS.Web.HomeLive,
+      Bonfire.RSS.Web.AboutLive
     ]
   )
 

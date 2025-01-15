@@ -1,4 +1,4 @@
-defmodule Bonfire.Rss.DataHelpers do
+defmodule Bonfire.RSS.DataHelpers do
   # import ExUnit.Assertions
-  # alias Bonfire.Rss.Fake
+  # alias Bonfire.RSS.Fake
 end
