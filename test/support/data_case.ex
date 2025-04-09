@@ -23,6 +23,8 @@ defmodule Bonfire.RSS.DataCase do
       import Ecto.Changeset
       import Ecto.Query
       # import Bonfire.RSS.DataCase
+
+      @moduletag :backend
     end
   end
 
