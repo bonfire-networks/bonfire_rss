@@ -1,7 +1,7 @@
 defmodule Bonfire.RSS.Integration do
   @moduledoc "./README.md" |> File.stream!() |> Enum.drop(1) |> Enum.join()
 
-  alias Bonfire.Common.Config
+  use Bonfire.Common.Config
   alias Bonfire.Common.Utils
   use Bonfire.Common.E
   import Untangle
