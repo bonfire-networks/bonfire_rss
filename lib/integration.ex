@@ -185,7 +185,7 @@ defmodule Bonfire.RSS.Integration do
         # or to (re)publish the activity:
         |> Keyword.put_new(:update_existing, :force)
         |> Keyword.merge(
-          id: Bonfire.Common.DatesTimes.maybe_generate_ulid(item["pubDate"]),
+          id: Bonfire.Common.DatesTimes.generate_ulid_if_past(item["pubDate"]),
           post_create_fn: fn current_user, media, opts ->
             Bonfire.Social.Objects.publish(
               current_user,
