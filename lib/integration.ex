@@ -198,16 +198,16 @@ defmodule Bonfire.RSS.Integration do
           extra: meta
         )
 
-      # TODO: optionally use this instead to not re-fetch each iterm: Bonfire.Files.Acts.URLPreviews.maybe_save(
+      # TODO: optionally use this instead to not re-fetch each iterm: Bonfire.Files.maybe_save(
       if opts[:fetch_items],
         do:
-          Bonfire.Files.Acts.URLPreviews.maybe_fetch_and_save(
+          Bonfire.Files.Media.maybe_fetch_and_save(
             user,
             feed_info[:item_link],
             opts
           ),
         else:
-          Bonfire.Files.Acts.URLPreviews.maybe_save(
+          Bonfire.Files.Media.maybe_save(
             user,
             feed_info[:item_link],
             meta,
