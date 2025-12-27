@@ -46,6 +46,7 @@ defmodule Bonfire.RSS do
 
   def detect_feed_type(feed_string) do
     cond do
+      # TODO: optimise detection
       feed_string |> String.contains?("<rss") ->
         :rss
 

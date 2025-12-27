@@ -7,3 +7,4 @@ needle = "~> 0.7"
 req = "~> 0.5.8"
 reed = "~> 0.2.0"
 fast_rss = "~> 0.5.0"
+# TODO: consider https://github.com/thiagomajesk/gluttony instead of fast_rss ?
