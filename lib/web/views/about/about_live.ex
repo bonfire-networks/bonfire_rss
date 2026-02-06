@@ -14,8 +14,7 @@ defmodule Bonfire.RSS.Web.AboutLive do
      assign(
        socket,
        page: "About",
-       page_title: "About the extension",
-       nav_items: Bonfire.Common.ExtensionModule.default_nav(:bonfire_rss)
+       page_title: "About the extension"
      )}
   end
 
